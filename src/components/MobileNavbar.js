@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(2);
 
   return (
     <BottomNavigation
@@ -25,7 +25,6 @@ export default function SimpleBottomNavigation() {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
-      showLabels
       className={classes.root}
     >
       <BottomNavigationAction icon={<ExploreIcon />} />
