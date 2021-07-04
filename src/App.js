@@ -1,14 +1,14 @@
-import Navbar from "./components/Navbar"
-import Card from "./components/Card";
+import MobileNavbar from "./components/MobileNavbar";
+import ContentContainer from "./components/ContentContainer";
+import "./styles/app.css";
 
 function App() {
-  const testArray = ["red", "green", "blue", "orange", "purple"];
-  let result = testArray.map((bgColor, index) => (
-    <Card key={index} bgColor={bgColor} />
-  ));
-  return <div className="app">
-  <Navbar/>
-  {result}</div>;
+  return (
+    <div className="app">
+      <ContentContainer />
+      <MobileNavbar />
+    </div>
+  );
 }
 
 export default App;

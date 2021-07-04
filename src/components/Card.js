@@ -1,8 +1,9 @@
+import Box from "@material-ui/core/Box";
 import "../styles/card.css";
 
 export default function Card({ bgColor }) {
   return (
-    <div className="card" style={{ background: bgColor }}>
+    <Box className="card" style={{ background: bgColor }}>
       <div className="card-body">
         <h2 className="card-title">Art Title</h2>
       </div>
@@ -15,6 +16,6 @@ export default function Card({ bgColor }) {
           necessitatibus.
         </p>
       </div>
-    </div>
+    </Box>
   );
 }
