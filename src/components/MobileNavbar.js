@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import {
@@ -27,11 +28,27 @@ export default function SimpleBottomNavigation() {
       }}
       className={classes.root}
     >
-      <BottomNavigationAction icon={<ExploreIcon />} />
-      <BottomNavigationAction icon={<FavoriteIcon />} />
-      <BottomNavigationAction icon={<HomeIcon />} />
-      <BottomNavigationAction icon={<ShoppingCartIcon />} />
-      <BottomNavigationAction icon={<AccountCircleIcon />} />
+      <BottomNavigationAction
+        component={Link}
+        to="/explore"
+        icon={<ExploreIcon />}
+      />
+      <BottomNavigationAction
+        component={Link}
+        to="/favorites"
+        icon={<FavoriteIcon />}
+      />
+      <BottomNavigationAction component={Link} to="/" icon={<HomeIcon />} />
+      <BottomNavigationAction
+        component={Link}
+        to="/cart"
+        icon={<ShoppingCartIcon />}
+      />
+      <BottomNavigationAction
+        component={Link}
+        to="/profile"
+        icon={<AccountCircleIcon />}
+      />
     </BottomNavigation>
   );
 }

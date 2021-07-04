@@ -5,7 +5,7 @@ export default function Card({ bgColor }) {
   return (
     <Box className="card" style={{ background: bgColor }}>
       <div className="card-body">
-        <h2 className="card-title">Art Title</h2>
+        <h1 className="card-title">Title</h1>
       </div>
       <div className="description-section">
         <h4>Description</h4>
