@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import "../styles/content-container.css";
 
 export default function ContentContainer() {
-  const testArray = ["red", "green", "blue", "orange", "purple"];
+  const testArray = ["red", "green", "blue", "orange", "purple", "cyan", "lime", "grey"];
   let result = testArray.map((bgColor, index) => (
     <Card key={index} bgColor={bgColor} />
   ));
