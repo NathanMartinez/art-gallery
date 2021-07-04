@@ -1,9 +1,9 @@
-import Box from "@material-ui/core/Box";
 import "../styles/card.css";
 
-export default function Card({ bgColor }) {
+export default function Card({ imgUrl }) {
+  console.log(imgUrl);
   return (
-    <Box className="card" style={{ background: bgColor }}>
+    <div className="card" style={{ background: `url(${imgUrl}) no-repeat center center fixed` }}>
       <div className="card-body">
         <h1 className="card-title">Title</h1>
       </div>
@@ -16,6 +16,6 @@ export default function Card({ bgColor }) {
           necessitatibus.
         </p>
       </div>
-    </Box>
+    </div>
   );
 }

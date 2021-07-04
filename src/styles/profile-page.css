@@ -1,0 +1,14 @@
+.profile-page {
+  color: #fff;
+}
+
+.profile-page>ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.profile-page>ul>li {
+  padding: 1rem;
+  background: rgb(80, 80, 80);
+}
