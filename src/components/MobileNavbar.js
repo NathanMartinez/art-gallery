@@ -9,12 +9,21 @@ import {
   AccountCircle as AccountCircleIcon,
   ShoppingCart as ShoppingCartIcon,
 } from "@material-ui/icons";
+import "../styles/navbar.css"
 
 const useStyles = makeStyles({
   root: {
     width: "100%",
   },
 });
+
+function HomeButton() {
+  return (
+    <div className="home-button">
+      <HomeIcon />
+    </div>
+  );
+}
 
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
@@ -38,7 +47,7 @@ export default function SimpleBottomNavigation() {
         to="/favorites"
         icon={<FavoriteIcon />}
       />
-      <BottomNavigationAction component={Link} to="/" icon={<HomeIcon />} />
+      <BottomNavigationAction component={Link} to="/" icon={<HomeButton />} />
       <BottomNavigationAction
         component={Link}
         to="/cart"

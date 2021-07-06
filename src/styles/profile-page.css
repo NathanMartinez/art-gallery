@@ -1,14 +1,21 @@
 .profile-page {
-  color: #fff;
-}
-
-.profile-page>ul {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  list-style-type: none;
 }
 
-.profile-page>ul>li {
+.follow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
-  background: rgb(80, 80, 80);
+  flex: 1;
+}
+
+.social-media-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
