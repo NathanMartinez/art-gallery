@@ -19,3 +19,23 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.facebook-icon {
+  color: #4267B2;
+}
+
+.instagram-icon {
+  color: #E1306C;
+}
+
+.twitter-icon {
+  color: #1DA1F2;
+}
+
+.youtube-icon {
+  color: #FF0000
+}
+
+.linkedin-icon {
+  color: #2867B2;
+}

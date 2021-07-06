@@ -48,7 +48,7 @@ export default function InsetDividers() {
           </ListItemAvatar>
           <ListItemText
             primary="Profile Picture"
-            secondary="Last Updated: Jan 9, 2014"
+
           />
         </ListItem>
         <Divider variant="inset" component="li" />
@@ -67,7 +67,7 @@ export default function InsetDividers() {
               <StayPrimaryPortraitIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary="Phone Number" secondary="+1(505)555-5555" />
+          <ListItemText primary="Phone Number" secondary="+1 (505) 555-5555" />
         </ListItem>
         <Divider variant="inset" component="li" />
         <ListItem>
@@ -121,11 +121,11 @@ export default function InsetDividers() {
           Follow Us!
         </Typography>
         <div className="social-media-container">
-          <FacebookIcon fontSize="large" />
-          <InstagramIcon fontSize="large" />
-          <TwitterIcon fontSize="large" />
-          <YouTubeIcon fontSize="large" />
-          <LinkedInIcon fontSize="large" />
+          <FacebookIcon fontSize="large" className="facebook-icon" />
+          <InstagramIcon fontSize="large" className="instagram-icon" />
+          <TwitterIcon fontSize="large" className="twitter-icon" />
+          <YouTubeIcon fontSize="large" className="youtube-icon" />
+          <LinkedInIcon fontSize="large" className="linkedin-icon" />
         </div>
       </div>
     </div>
