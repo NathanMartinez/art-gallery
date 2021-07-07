@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+
 import {
   Typography,
   Divider,
@@ -9,6 +10,7 @@ import {
   ListItemText,
   ListItem,
 } from "@material-ui/core";
+
 import {
   EventNote as EventNoteIcon,
   Send as SendIcon,
@@ -23,6 +25,7 @@ import {
   Twitter as TwitterIcon,
   LinkedIn as LinkedInIcon
 } from "@material-ui/icons";
+
 import "../../styles/profile-page.css";
 
 const useStyles = makeStyles((theme) => ({

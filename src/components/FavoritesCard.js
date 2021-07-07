@@ -4,9 +4,10 @@ import {
   AddShoppingCart as AddShoppingCartIcon,
   RemoveShoppingCart as RemoveShoppingCartIcon
 } from "@material-ui/icons";
+
 import "../styles/card.css";
 
-export default function Card({ imgUrl }) {
+export default function FavoritesCard({ imgUrl }) {
   console.log(imgUrl);
   return (
     <div
