@@ -12,9 +12,11 @@ export default function FavoritesPage() {
     "https://cdn.pixabay.com/photo/2018/08/16/22/11/statue-3611604_1280.jpg",
     "https://cdn.pixabay.com/photo/2017/10/05/13/37/metal-morphosis-2819439_1280.png",
   ];
+
   let result = testArray.map((image, index) => (
     <Card key={index} imgUrl={image} />
   ));
+  
   return (
     <div className="favorites-page">
       {result}
