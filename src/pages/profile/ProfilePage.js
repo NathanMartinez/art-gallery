@@ -45,7 +45,7 @@ export default function InsetDividers() {
         <ListItem>
           <ListItemAvatar>
             <Avatar
-              alt="Cindy Baker"
+              alt="Nate Martinez"
               src="https://material-ui.com/static/images/avatar/2.jpg"
             />
           </ListItemAvatar>

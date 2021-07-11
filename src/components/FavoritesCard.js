@@ -1,14 +1,13 @@
 import {
-  FavoriteBorder as FavoriteBorderIcon,
   Favorite as FavoriteIcon,
   AddShoppingCart as AddShoppingCartIcon,
-  RemoveShoppingCart as RemoveShoppingCartIcon
 } from "@material-ui/icons";
 
 import "../styles/card.css";
 
-export default function FavoritesCard({ imgUrl }) {
-  console.log(imgUrl);
+export default function FavoritesCard({
+  data: { name, imgUrl, description, liked, createdDate, price },
+}) {
   return (
     <div
       className="card"
@@ -16,25 +15,19 @@ export default function FavoritesCard({ imgUrl }) {
     >
       <div className="card-body">
         <div className="title-container">
-          <h1 className="card-title">Title</h1>
+          <h1 className="card-title">{name}</h1>
+          <h3>${price}</h3>
         </div>
       </div>
       <div className="description-section">
         <h4>Description</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-          totam eum earum vero enim qui culpa commodi natus sit iste, aperiam
-          debitis omnis nisi, sapiente aliquam saepe voluptatibus. Rerum,
-          necessitatibus.
-        </p>
+        <p>{description}</p>
         <div className="card-footer">
           <div className="card-footer-icon-container">
-            <FavoriteIcon style={{ color: "red" }} />
-            {/* <FavoriteBorderIcon className="card-footer-icon" /> */}
+            <FavoriteIcon className={liked ? "liked" : null} />
             <AddShoppingCartIcon className="card-footer-icon" />
-            {/* <RemoveShoppingCartIcon /> */}
           </div>
-          <small className="muted-text">Created: 03/24/2020</small>
+          <small className="muted-text">Created: {createdDate}</small>
         </div>
       </div>
     </div>

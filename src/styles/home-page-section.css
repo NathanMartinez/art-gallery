@@ -1,0 +1,7 @@
+.home-page-section {
+  display: flex;
+  height: 100%;
+  scroll-snap-align: start;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
