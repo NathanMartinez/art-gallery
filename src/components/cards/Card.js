@@ -12,7 +12,6 @@ export default function Card({ data, index }) {
       <img className="card-image" src={imgUrl} alt={imgAlt} />
       <div className="title-section">
         <h3 className="card-title">Test Item #{index + 1}</h3>
-        <h4 className="card-price">$300</h4>
       </div>
       <div className="card-info-section">
         <div className="card-options">

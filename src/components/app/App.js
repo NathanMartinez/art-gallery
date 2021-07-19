@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ContentContainer from "./components/ContentContainer";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./styles/app.css";
@@ -9,11 +10,15 @@ const appHeight = () => {
   const doc = document.documentElement;
   doc.style.setProperty("--app-height", `${window.innerHeight}px`);
 };
+
 window.addEventListener("resize", appHeight);
-window.addEventListener("orientationchange", () => setTimeout(appHeight, 50));
 appHeight();
 
 function App() {
+  useEffect(() => {
+    appHeight();
+  }, []);
+
   return (
     <Router>
       <div className="app">

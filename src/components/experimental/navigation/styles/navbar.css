@@ -6,7 +6,8 @@
 
 .nav-header,
 .nav-container {
-  background: var(--dark-grey);
+  background: var(--less-transparent-black);
+  backdrop-filter: blur(6px);
   z-index: 999;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .list-item:hover {
-  opacity: 0.5;
+  background: var(--transparent-purple);
 }
 
 .list-item a {

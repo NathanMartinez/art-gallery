@@ -1,7 +1,9 @@
 :root {
   font-size: 16px;
   --transparent-black: rgba(0, 0, 0, 0.7);
+  --less-transparent-black: rgba(0, 0, 0, 0.95);
   --dark-grey: #363732;
+  --transparent-purple: rgba(148, 33, 255, 0.6);
   --app-height: 100%;
   --padding: 1rem;
 }
@@ -23,4 +25,8 @@ body {
   width: 100vw;
   height: 100vh;
   height: var(--app-height);
+}
+
+body {
+  background: #000;
 }

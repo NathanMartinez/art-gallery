@@ -1,10 +1,12 @@
-import React from "react";
-import ExploreIcon from "@material-ui/icons/Explore";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import HomeIcon from "@material-ui/icons/Home";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import ContactSupportIcon from '@material-ui/icons/ContactSupport';
+import {
+  Explore,
+  Favorite,
+  Home,
+  ShoppingCart,
+  AccountCircle,
+  ContactSupport,
+} from "@material-ui/icons";
+
 import "./styles/navbar.css";
 
 export default function NavbarEx() {
@@ -20,27 +22,27 @@ export default function NavbarEx() {
       <nav className="nav-container">
         <ul className="nav-list">
           <li className="list-item">
-            <HomeIcon className="nav-icon" />
+            <Home className="nav-icon" />
             Home
           </li>
           <li className="list-item">
-            <ExploreIcon className="nav-icon" />
+            <Explore className="nav-icon" />
             Explore
           </li>
           <li className="list-item">
-            <FavoriteIcon className="nav-icon" />
+            <Favorite className="nav-icon" />
             Favorites
           </li>
           <li className="list-item">
-            <ShoppingCartIcon className="nav-icon" />
+            <ShoppingCart className="nav-icon" />
             Cart
           </li>
           <li className="list-item">
-            <AccountCircleIcon className="nav-icon" />
+            <AccountCircle className="nav-icon" />
             Account
           </li>
           <li className="list-item">
-            <ContactSupportIcon className="nav-icon" />
+            <ContactSupport className="nav-icon" />
             Support
           </li>
         </ul>
