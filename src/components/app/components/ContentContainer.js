@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import ProfilePage from "../pages/profile/ProfilePage";
-import FavoritesPage from '../pages/favorites/FavoritesPage'
+import ProfilePage from "../../../pages/profile/ProfilePage";
+import FavoritesPage from '../../../pages/favorites/FavoritesPage'
 import "../styles/content-container.css";
-import HomePageSection from './HomePageSection'
-import HomePage from '../pages/home/HomePage'
-import ExplorePage from '../pages/explore/ExplorePage'
+import HomePageSection from '../../HomePageSection'
+import HomePage from '../../../pages/home/HomePage'
+import ExplorePage from '../../../pages/explore/ExplorePage'
 
 export default function ContentContainer() {
   return (

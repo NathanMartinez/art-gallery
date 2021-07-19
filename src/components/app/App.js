@@ -1,8 +1,6 @@
-import MobileNavbar from "./components/MobileNavbar";
 import ContentContainer from "./components/ContentContainer";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./styles/app.css";
-import MainHeader from "./components/MainHeader";
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -13,9 +11,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <MainHeader />
         <ContentContainer />
-        <MobileNavbar />
       </div>
     </Router>
   );

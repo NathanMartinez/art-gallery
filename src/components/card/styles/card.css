@@ -1,0 +1,38 @@
+.card {
+  position: relative;
+  height: 100%;
+}
+
+.card-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+
+.card-price {
+  font-weight: 500;
+}
+
+.title-section,
+.description-section {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  padding: 1rem;
+}
+
+.description-section {
+  position: absolute;
+  bottom: 0;
+}
