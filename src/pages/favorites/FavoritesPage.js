@@ -5,7 +5,7 @@ import "../../styles/favorites-page.css";
 
 export default function FavoritesPage() {
   let result = images.map((data, index) => (
-    <Card key={index} data={data} />
+    <Card key={index} data={data} index={index} />
   ));
 
   return <div className="favorites-page">{result}</div>;

@@ -1,7 +1,3 @@
-import React from "react";
-import HomeCard from "../../components/HomeCard";
-import HomePageSection from "../../components/HomePageSection";
-
 export default function HomePage() {
   const testData = [
     {
@@ -15,13 +11,5 @@ export default function HomePage() {
       items: [],
     },
   ];
-  let result = testData.map(({ url, title }, i) => (
-    <HomeCard key={i} bgVideo={url} title={title} />
-  ));
-
-  let sections = Array(3)
-    .fill(0)
-    .map((_, i) => <HomePageSection key={i} cards={result} />);
-
-  return <>{sections}</>;
+  return;
 }

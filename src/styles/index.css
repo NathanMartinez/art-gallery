@@ -1,3 +1,11 @@
+:root {
+  font-size: 16px;
+  --transparent-black: rgba(0, 0, 0, 0.7);
+  --dark-grey: #363732;
+  --app-height: 100%;
+  --padding: 1rem;
+}
+
 *,
 *::before,
 *::after {
@@ -9,7 +17,10 @@
 
 html,
 body {
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  height: var(--app-height);
 }

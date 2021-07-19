@@ -19,7 +19,6 @@
 
 .card-title {
   font-weight: 600;
-  letter-spacing: .1rem;
 }
 
 .card-price {
@@ -29,7 +28,7 @@
 .title-section,
 .card-info-section {
   position: absolute;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--transparent-black);
   color: #fff;
   left: 0;
   right: 0;
@@ -37,7 +36,7 @@
 
 .title-section,
 .card-info-section {
-  padding: 1rem;
+  padding: var(--padding);
 }
 
 .title-section {
@@ -52,4 +51,8 @@
 
 .card-options svg:last-child {
   margin-left: 1rem;
+}
+
+.card-icon {
+  transform: scale(.9);
 }
