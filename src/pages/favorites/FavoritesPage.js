@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "../../components/card/Card";
-import images from "../../components/card/testData/getImages";
+import Card from "../../components/cards/Card";
+import images from "../../components/cards/testData/getImages";
 import "../../styles/favorites-page.css";
 
 export default function FavoritesPage() {
